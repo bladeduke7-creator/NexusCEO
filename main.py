@@ -30,7 +30,7 @@ def generate_strategy(prompt):
     try:
         # Search Tool ကို နေရာမှန် ပြန်ထည့်ပေးထားတယ်
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash", # Flash က ပိုမြန်ပြီး Limit ပိုများတယ်
+            model_name="models/gemini-1.5-flash", # Flash က ပိုမြန်ပြီး Limit ပိုများတယ်
             tools=[{"google_search_retrieval": {}}] 
         )
         response = model.generate_content(prompt)
