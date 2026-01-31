@@ -10,7 +10,7 @@ else:
     st.error("Secrets ထဲမှာ Key မရှိသေးပါဘူး!")
 
 # Model နာမည်ကို အရှင်းဆုံးထားပါမယ်
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-1.5-pro")
 
 st.title("💼 Nexus CEO Agent")
 
